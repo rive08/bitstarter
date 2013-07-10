@@ -86,8 +86,9 @@ if (require.main == module) {
 
 
     if (program.url) {
-		console.log(program.url);
+//		console.log(program.url);
 		rest.get(program.url).on('complete', function(contents) {
+//
 		console.log(contents);
 		checkJson = checkURLContents(contents, program.checks);
 		outJson = JSON.stringify(checkJson, null, 4);
